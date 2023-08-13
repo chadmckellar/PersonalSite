@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function Header() {
   return (
-    <div className="header">
+    <div className="header bg-slate-800">
       <nav className="flex justify-between items-center py-4 px-8">
         <div className="text-2xl font-semibold">Chad McKellar</div>
         <div className="flex">
