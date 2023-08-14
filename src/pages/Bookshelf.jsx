@@ -28,12 +28,14 @@ function Bookshelf() {
       <Header />
       <main className="flex-grow">
         <h1 className="text-2xl md:text-4xl font-semibold text-center text-gray-200 my-8">Currently reading...</h1>
-        <div className="flex justify-left flex-wrap p-1">
-          {books.filter((book) => book.category === 'reading').map((book) => (
-            <div className="m-4">
-              <Book {...book} />
-            </div>
-          ))}
+        <div className="flex justify-center">
+          <div className="flex flex-wrap px-4 w-full items-start justify-start">
+            {books.filter((book) => book.category === 'reading').map((book) => (
+              <div className="m-4">
+                <Book {...book} />
+              </div>
+            ))}
+          </div>
         </div>
       </main>
       <Footer />
